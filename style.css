@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Primária */
+  --primary: #5865F2;
+  --primary-light: #7C88FF;
+  --primary-container: #ebedf9;
+
+  /* Secundária */
+  --secondary: #8B5CF6;
+  --secondary-container: #F1E8FF;
+
+  /* Terciária */
+  --tertiary: #4CAF50;
+  --tertiary-container: #DFF3E0;
+
+  /* Fundo */
+  --background: #F6F7FB;
+  --surface: #FFFFFF;
+
+  /* Texto */
+  --on-background: #1F2937;
+  --on-surface: #374151;
+
+  /* Bordas */
+  --outline: #E5E7EB;
+
+  /* Estados */
+  --warning: #FBBF24;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  --bs-body-font-family: 'Inter', sans-serif !important;
+  --bs-primary: var(--primary);
+  --bs-secondary: var(--secondary);
+}
+
+body {
+  /* Tipografia */
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.6rem;
+  background-color: var(--background);
+}
+
+.bg-badge {
+  background-color: var(--outline);
+  color: var(--tertiary);
+  font-size: 0.75rem !important;
+}
+
+.bg-badge::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--tertiary);
+  margin-right: 0.5rem;
+}
+
+.bg-hero {
+  background-color: var(--primary-container);
+  color: var(--on-background);
+  padding: 4rem 0;
+}
+
+.hero-text {
+  font-weight: 700;
+  color: var(--primary-light);
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.hero-description {
+  color: var(--on-background);
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+  background-color: var(--primary-container);
+}
+
+.social-media-icons a {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--outline);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-background);
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+
+
+.btn-primary.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.btn:active.btn:active {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(88, 101, 242, 0.5);
+}
+
+.btn-outline-primary.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--surface);
+}
